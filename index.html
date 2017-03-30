@@ -161,7 +161,7 @@ if (navigator.geolocation) {
 
 		//AJAX request
 
-		$.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=188b68e6b443a5380ce7ee0f0bb49cfc", function (data) {
+		$.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=c7d6dace33284384aae2d473db6dc94b", function (data) {
 			var rawJson = JSON.stringify(data);
 			var json = JSON.parse(rawJson);
 			updateWeather(json); //Update Weather parameters
@@ -181,7 +181,7 @@ if (navigator.geolocation) {
 		
 		//AJAX Request
 
-		$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=188b68e6b443a5380ce7ee0f0bb49cfc", function (data) {
+		$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=c7d6dace33284384aae2d473db6dc94b", function (data) {
 			var rawJson = JSON.stringify(data);
 			var json = JSON.parse(rawJson);
 			updateWeather(json); //Update Weather parameters
